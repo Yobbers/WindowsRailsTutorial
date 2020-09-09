@@ -5,10 +5,13 @@ How to set up a Rails application on Windows using WSL 2 and Docker.
 This guide is written on Windows 10 Pro Version 2004 Build 19041.508.
 
 ### Step 1: Install and enable WSL 2
-Install and enable WSL 2 by using the following [Microsoft docs](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+Install and enable WSL 2 by using the following [guide](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
 ### Step 2: Install Ubuntu, Docker and Visual Studio Code
 Install [Ubuntu](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6), [Docker](https://docs.docker.com/docker-for-windows/install/) and [Visual Studio Code](https://code.visualstudio.com/download) in the previous stated order.
+
+#### Bonus: Visual Studio Code Extensions
+In most cases Visual Studio Code automatically detects WSL and Docker and suggests the install of usefull extensions. In case of the opposite, the recommended extensions are: [Docker for Visual Studio Code by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) and [Visual Studio Code Remote - WSL by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl).
 
 ### Step 3: Make a Work Directory
 Visit `\\wsl$\Ubuntu\home\user` and create a folder for your Work Directory.
@@ -64,10 +67,10 @@ services:
 Open the terminal inside Visual Studio Code and run `$ docker-compose build`. After succesfully building the container run `docker-compose run --service-ports ruby_dev`.
 
 ### Step 9: Create a new Rails application
-While inside your Container (your terminal should look similar to `root@ab4bb8f693a8:/home/user/workdirectory#`) run `rails new myapp && cd myapp`.
+While inside your Container (your terminal should look similar to `root@ab4bb8f693a8:/home/user/workdirectory#`) run `# rails new myapp && cd myapp`.
 
 ### Step 10: Update and Install gems
-While inside your container and with the application directory selected (your terminal should look similar to `root@ab4bb8f693a8:/home/user/workdirectory/myapp#`) run `bundle update && bundle install`.
+While inside your container and with the application directory selected (your terminal should look similar to `root@ab4bb8f693a8:/home/user/workdirectory/myapp#`) run `# bundle update && bundle install`.
 
 ### Step 11: Start Rails Server
-While inside your container and with the application directory selected (your terminal should look similar to `root@ab4bb8f693a8:/home/user/workdirectory/myapp#`) run `rails server -p $PORT -b 0.0.0.0`.
+While inside your container and with the application directory selected (your terminal should look similar to `root@ab4bb8f693a8:/home/user/workdirectory/myapp#`) run `# rails server -p $PORT -b 0.0.0.0`.
