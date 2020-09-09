@@ -14,7 +14,7 @@ Install [Ubuntu](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6), [Docker
 In most cases Visual Studio Code automatically detects WSL and Docker and suggests the install of usefull extensions. In case of the opposite, the recommended extensions are: [Docker for Visual Studio Code by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) and [Visual Studio Code Remote - WSL by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl). Close your Visual Studio Code before *Step 3* to make sure that the extensions are active.
 
 ### Step 3: Make a Work Directory
-Visit `\\wsl$\Ubuntu\home\user` and create a folder for your Work Directory.
+Within Explorer visit `\\wsl$\Ubuntu\home\user` and create a folder for your Work Directory.
 
 ### Step 4: Open your Work Directory using the Ubuntu terminal and launch Visual Studio Code
 First run command `$ cd workdirectory` and then inside your directory run `$ code .`. When run for the first time within your WSL 2 Ubuntu will install server components for Visual Studio Code and launch the application afterwards.
