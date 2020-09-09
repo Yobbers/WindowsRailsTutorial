@@ -11,7 +11,7 @@ Install and enable WSL 2 by using the following [guide](https://docs.microsoft.c
 Install [Ubuntu](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6), [Docker](https://docs.docker.com/docker-for-windows/install/) and [Visual Studio Code](https://code.visualstudio.com/download) in the previous stated order.
 
 #### Bonus: Visual Studio Code Extensions
-In most cases Visual Studio Code automatically detects WSL and Docker and suggests the install of usefull extensions. In case of the opposite, the recommended extensions are: [Docker for Visual Studio Code by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) and [Visual Studio Code Remote - WSL by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl).
+In most cases Visual Studio Code automatically detects WSL and Docker and suggests the install of usefull extensions. In case of the opposite, the recommended extensions are: [Docker for Visual Studio Code by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) and [Visual Studio Code Remote - WSL by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl). Close your Visual Studio Code before *Step 3* to make sure the extensions are active.
 
 ### Step 3: Make a Work Directory
 Visit `\\wsl$\Ubuntu\home\user` and create a folder for your Work Directory.
