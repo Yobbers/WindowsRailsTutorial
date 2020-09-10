@@ -79,7 +79,7 @@ While inside your container and with the application directory selected (your te
 After finishing your work day and exiting your container (and computer) by using `$ exit` or `CTRL + D` you will need to restart it the next day. To start this process we firstly need to open our Work Directory within Visual Studio Code by running `$ cd workdirectory && code .`. Then, to make things easier, rename our container by running `$ sudo docker rename old_name_id new_name_id` in the Visual Studio Code terminal.
 
 #### Start Container
-Now we are ready to start and enter our newly named container with the command `$ docker start new_name_id && docker exec -it new_name_id bash`. This brings us within our container (notice *$* changing to *#*) and gives us the opportunity to restart our Rails server. 
+Now we are ready to start and enter our newly named container with the command `$ docker start new_name_id && docker exec -it new_name_id bash`. This brings us within our container (remember, your terminal should look similar to root@ab4bb8f693a8:/home/user/workdirectory#) and gives us the opportunity to restart our Rails server. 
 
 #### Start Server
-First enter your application directory by running `# cd myapp` and then finalize by starting the server with `# rails server -p $PORT -b 0.0.0.0`.
+First enter your application directory by running `# cd myapp` (remember, your terminal should look similar to root@ab4bb8f693a8:/home/user/workdirectory/myapp#) and then finalize by starting the server with `# rails server -p $PORT -b 0.0.0.0`.
