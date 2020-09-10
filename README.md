@@ -17,7 +17,7 @@ In most cases Visual Studio Code automatically detects WSL and Docker and sugges
 Within Explorer visit `\\wsl$\Ubuntu\home\user` and create a folder for your Work Directory.
 
 ### Step 4: Open your Work Directory using the Ubuntu terminal and launch Visual Studio Code
-First run command `$ cd workdirectory` and then inside your directory run `$ code .`. When run for the first time within your WSL 2 Ubuntu will install server components for Visual Studio Code and launch the application afterwards.
+First run command `$ cd workdirectory` and then inside your directory run `$ code .`. When run for the first time within your WSL 2, Ubuntu will install server components for Visual Studio Code and launch the application afterwards.
 
 ### Step 5: Make a `.dockerignore` and `.gitignore` file inside your Work Directory
 Inside Visual Studio Code create two files called *.dockerignore* and *.gitignore* within the Work Directory. Use the pre-made snippets of code inside the designated file: [.dockerignore](https://github.com/wouteryobbers/WindowsRailsTutorial/blob/master/workdirectory/.dockerignore), [.gitignore](https://github.com/wouteryobbers/WindowsRailsTutorial/blob/master/workdirectory/.gitignore).
